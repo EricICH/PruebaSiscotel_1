@@ -58,8 +58,8 @@ def programa
           print e2
         end 
         puts " = #{resultado} "
-        puts "#{e1} posicion #{i}"
-        puts "#{e2} posicion #{j}"
+        puts "entrada 1: #{e1} posicion=> #{i}"
+        puts "entrada 2: #{e2} posicion=> #{j}"
         puts ''
        end
      end
