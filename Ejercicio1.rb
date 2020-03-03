@@ -10,7 +10,7 @@
 
 def programa
   
-  print 'Ingresa un numero (escriba "Ok" para finalizar)'
+  puts 'Ingresa un numero (escriba "Ok" para finalizar carga)'
   
   entrada = ''
   arreglo=[]
