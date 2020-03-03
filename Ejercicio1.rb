@@ -78,7 +78,7 @@ end
     else
       puts "Comando no Valido"
     end
-    puts "Desea repetir la Operacion"
+    puts "Desea repetir la Operacion (s/n): "
     exe=gets.chomp
   end
   puts "fin"
