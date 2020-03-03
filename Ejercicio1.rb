@@ -8,6 +8,7 @@
     end
   end
 
+#definimos nuestro algoritmo como una funcion llamada 'programa'
 def programa
   
   puts 'Ingresa un numero (escriba "Ok" para finalizar carga)'
@@ -15,7 +16,7 @@ def programa
   entrada = ''
   arreglo=[]
   
-  #obtenemos entrada del usuario
+  #obtenemos entrada del usuario y validamos
   while validaOk(entrada)
     entrada = gets.chomp
     #validar si es entero antes de almacenar
@@ -33,7 +34,8 @@ def programa
   print 'Ingrese resultado a buscar: '
   resultado = gets.chomp.to_i
 
-  #aca se recorre el arreglo obteniendo el valor del indice i
+  # aca se recorre el arreglo obteniendo el valor del indice i
+  #res = variable donde se guardaran cuantas coincidencias sean encotnradas
   res=0
   arreglo.each_with_index do |valor, i|
     
@@ -65,17 +67,21 @@ def programa
      end
      
   end
+  # en caso de no encontrar ninguna pareja de valores que coincida con el resultado
   if res==0 
    puts "No se encontraron coincidencas"
   end
 end
   
   exe='s'
-
+  #ciclo de ejecucion de programa
   while exe.downcase !='n'
+    #verificar si se desea ejecutar el programa
     if exe.downcase == 's'
+      #se ejecuta llamado a la funcion programa
       programa
     else
+      #en caso de ingresar un valor diferente a 's' o 'n'
       puts "Comando no Valido"
     end
     puts "Desea repetir la Operacion (s/n): "
